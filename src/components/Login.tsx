@@ -1,3 +1,4 @@
+import '../style/login.css'
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -28,31 +29,33 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Iniciar Sesión</h1>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Contraseña:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Iniciar Sesión</button>
-      </form>
-    </div>
+    <body className='bodyLogin'>
+      <div className='divLogin'>
+        <h1>Iniciar Sesión</h1>
+        {error && <p>{error}</p>}
+        <form onSubmit={handleLogin}>
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label>Contraseña:</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
+    </body>
   );
 };
 
