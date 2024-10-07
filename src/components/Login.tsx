@@ -31,9 +31,9 @@ const Login: React.FC = () => {
   return (
     <body className='bodyLogin'>
       <div className='divLogin'>
-        <h1>Iniciar Sesión</h1>
+        <h1 className='h1Login'>Iniciar Sesión</h1>
         {error && <p>{error}</p>}
-        <form onSubmit={handleLogin}>
+        <form className='formLogin' onSubmit={handleLogin}>
           <div>
             <label>Email:</label>
             <input
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
               required
             />
           </div>
-          <button type="submit">Iniciar Sesión</button>
+          <button className='btnLogin' type="submit">Iniciar Sesión</button>
         </form>
       </div>
     </body>

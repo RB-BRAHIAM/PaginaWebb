@@ -1,3 +1,4 @@
+import '../style/register.css'
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -24,7 +25,9 @@ const Register: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <body className='bodyRegister'>
+      <form onSubmit={handleSubmit}>
+      <h1 className='h1Register'>Registro</h1>
       <input
         type="email"
         placeholder="Email"
@@ -42,6 +45,7 @@ const Register: React.FC = () => {
       {error && <p>{error}</p>}
       <button type="submit">Register</button>
     </form>
+    </body>
   );
 };
 
