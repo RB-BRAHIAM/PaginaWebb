@@ -21,6 +21,34 @@ const User = {
     });
   },
 
+  findById: (id, callback) => {
+    db.query('SELECT * FROM users WHERE id = ?', [id], (err, result) => {
+      if (err) {
+        return callback(err);
+      }
+      return callback(null, result[0]);
+    });
+  },
+
+  update: (id, email, password, callback) => {
+    const hashedPassword = bcrypt.hashSync(password, 10); // Hasheando la nueva contraseña
+    db.query('UPDATE users SET email = ?, password = ? WHERE id = ?', [email, hashedPassword, id], (err, result) => {
+      if (err) {
+        return callback(err);
+      }
+      return callback(null, result);
+    });
+  },
+
+  delete: (id, callback) => {
+    db.query('DELETE FROM users WHERE id = ?', [id], (err, result) => {
+      if (err) {
+        return callback(err);
+      }
+      return callback(null, result);
+    });
+  },
+
   verifyPassword: async (password, hashedPassword) => {
     return await bcrypt.compare(password, hashedPassword);
   }
