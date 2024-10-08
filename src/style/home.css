@@ -1,4 +1,137 @@
+
 .divHome{
-    background-color: #E3DCD2;
+    background-color: #ffffff;
     height: 100vh;
+}
+
+.caption{
+    color: black;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 10px;
+    margin-top: 7rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.car-name{
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.category-search {
+    background-color: #100C0D;
+    text-align: center;
+    padding: 1rem 2rem ;
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 50px;    
+    margin-top: 3rem;   
+    color: #ffffff;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.category-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.4rem 2rem;
+    margin: 5px;
+    border: 2px solid #013328;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 180px; 
+    height: 150px; 
+    overflow: hidden; 
+}
+
+.category-button:hover {
+    background-color: rgba(0, 123, 255, 0.1); 
+    border-color: white; 
+}
+
+.bx {
+    font-size: 40px;      
+    margin-bottom: 10px;
+}
+
+.mostSearched{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+    margin-top: 30px; 
+}
+
+.card {
+    width: 20rem;
+    border: 2px solid #071042;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px; 
+}
+
+.bx i {
+    font-size: 1.5rem; 
+    color: #000000;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text {
+    font-size: 0.8rem; 
+    color: #333; 
+    margin-top: 10px;
+}
+
+.btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
 }

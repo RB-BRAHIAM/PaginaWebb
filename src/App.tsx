@@ -23,7 +23,6 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        {/* Aquí podrías añadir la ruta de 'Shopping' si tienes ese componente */}
       </Routes>
     </Router>
   );
