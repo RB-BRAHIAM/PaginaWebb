@@ -11,7 +11,6 @@ function App() {
   const items = [
     { name: "Home", path: "/home" },
     { name: "Shopping", path: "/shopping" },
-    { name: "Login", path: "/login" },
     { name: "Register", path: "/register" }
   ];
 
@@ -21,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>

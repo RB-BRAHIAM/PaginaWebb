@@ -31,5 +31,10 @@
 }
 
 .navbar{
-  background-color: #013328;
+  background-color: #64e5ff;
+}
+.bodyPrin{
+  margin: 0;
+  background: rgb(9,9,121);
+  background: linear-gradient(312deg, rgba(9,9,121,1) 5%, rgba(0,212,255,1) 42%);
 }

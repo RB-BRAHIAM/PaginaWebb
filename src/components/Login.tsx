@@ -15,7 +15,7 @@ const Login: React.FC = () => {
       const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
       console.log('Login exitoso:', res.data);
       localStorage.setItem('token', res.data.token);
-      navigate('/home'); // Redirigir al home después de iniciar sesión
+      navigate('/home'); 
     } catch (err: any) {
       console.error(err);
       if (err.response) {
