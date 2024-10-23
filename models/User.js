@@ -2,9 +2,9 @@ const db = require('../config/db');
 const bcrypt = require('bcryptjs');
 
 const User = {
-  create: async (email, password, callback) => {
+  create: async (name, email, password, callback) => { 
     const hashedPassword = await bcrypt.hash(password, 10);
-    db.query('INSERT INTO users (email, password) VALUES (?, ?)', [email, hashedPassword], (err, result) => {
+    db.query('INSERT INTO users (name, email, password) VALUES (?, ?, ?)', [name, email, hashedPassword], (err, result) => { // Insertamos name
       if (err) {
         return callback(err);
       }

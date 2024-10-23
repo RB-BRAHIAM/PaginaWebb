@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 
 // Registro
 const register = async (req, res) => {
-  const { email, password } = req.body;
+  const { name, email, password } = req.body; 
 
   // Verificar si el usuario ya existe
   User.findByEmail(email, (err, user) => {
@@ -15,7 +15,7 @@ const register = async (req, res) => {
     }
 
     // Si no existe, crear uno nuevo
-    User.create(email, password, (err, result) => {
+    User.create(name, email, password, (err, result) => {  
       if (err) {
         return res.status(500).json({ message: 'Error registering user' });
       }
