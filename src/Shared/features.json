@@ -1,0 +1,54 @@
+{
+    "features": [
+      {
+        "label": "Aire acondicionado",
+        "name": "airConditioner",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Bluetooth",
+        "name": "bluetooth",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Cámara de retroceso",
+        "name": "backCamera",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Control de crucero",
+        "name": "cruiseControl",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "GPS",
+        "name": "gps",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Asientos de cuero",
+        "name": "leatherSeats",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Techo solar",
+        "name": "sunroof",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Sensores de estacionamiento",
+        "name": "parkingSensors",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Sistema de sonido premium",
+        "name": "premiumSound",
+        "fieldType": "checkbox"
+      },
+      {
+        "label": "Arranque sin llave",
+        "name": "keylessStart",
+        "fieldType": "checkbox"
+      }
+    ]
+  }

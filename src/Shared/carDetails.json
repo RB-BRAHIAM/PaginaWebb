@@ -1,0 +1,100 @@
+{
+  "features": [
+    {
+      "fieldType": "text",
+      "name": "brand",
+      "label": "Marca",
+      "placeholder": "Ej: Toyota",
+      "required": true
+    },
+    {
+      "fieldType": "text",
+      "name": "modelo",
+      "label": "Modelo",
+      "placeholder": "Ej: Corolla",
+      "required": true
+    },
+    {
+      "fieldType": "number",
+      "name": "año",
+      "label": "Año",
+      "placeholder": "Ej: 2020",
+      "required": true
+    },
+    {
+      "fieldType": "number",
+      "name": "kilometraje",
+      "label": "Kilometraje",
+      "placeholder": "Ej: 50000",
+      "required": true
+    },
+    {
+      "fieldType": "text",
+      "name": "color",
+      "label": "Color",
+      "placeholder": "Ej: Rojo"
+    },
+    {
+      "fieldType": "number",
+      "name": "cilindraje",
+      "label": "Cilindraje",
+      "placeholder": "Ej: 2000"
+    },
+    {
+      "fieldType": "dropdown",
+      "name": "puertas",
+      "label": "Número de Puertas",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "fieldType": "dropdown",
+      "name": "tipo_combustible",
+      "label": "Tipo de Combustible",
+      "options": [
+        "Gasolina",
+        "Diesel",
+        "Gas Natural",
+        "Híbrido",
+        "Eléctrico"
+      ]
+    },
+    {
+      "fieldType": "dropdown",
+      "name": "tipo_carroceria",
+      "label": "Tipo de Carrocería",
+      "options": [
+        "Sedán",
+        "Hatchback",
+        "SUV",
+        "Pickup",
+        "Coupé",
+        "Familiar",
+        "Furgoneta"
+      ]
+    },
+    {
+      "fieldType": "dropdown",
+      "name": "estado",
+      "label": "Estado del Vehículo",
+      "options": [
+        "Nuevo",
+        "Usado - Como nuevo",
+        "Usado - Buen estado",
+        "Usado - Regular",
+        "Para reparar"
+      ]
+    },
+    {
+      "fieldType": "textarea",
+      "name": "descripcion",
+      "label": "Descripción o Comentarios",
+      "placeholder": "Ej: Vehículo en excelente estado, único dueño, mantenimiento al día...",
+      "required": false
+    }
+  ]
+}
