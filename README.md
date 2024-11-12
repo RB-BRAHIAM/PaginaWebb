@@ -5,4 +5,7 @@
 
 <h3 align="left">🎨 Paleta de colores</h3>
 
+<h2 align="left">🎨 Hola, soy Santi</h2>
+
+
 ![Nuestros colores](public/PaletaColor.jpeg)
