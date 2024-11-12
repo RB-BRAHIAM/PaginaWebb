@@ -2,6 +2,7 @@ import { UserButton, useUser, SignInButton } from '@clerk/clerk-react';
 import React from 'react';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom'
+import ThemeToggle from '../context/ThemeToggle';
 
 function Header() {
     const {user,isSignedIn} = useUser();
@@ -17,8 +18,7 @@ function Header() {
                 </Link>
 
             </ul>
-
-
+            <ThemeToggle />
             {isSignedIn? 
             <div className='flex items-center gap-5'>
                 <UserButton/>

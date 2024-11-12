@@ -9,6 +9,7 @@ import Home from './Home';
 import './index.css';
 import Profile from './Profile';
 import AddListing from './add-listing';
+import { ThemeProvider } from "./context/ThemeContext";
 
 
 const router = createBrowserRouter([
@@ -36,8 +37,10 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-      <RouterProvider router={router} />
-    </ClerkProvider>
+    <ThemeProvider>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+        <RouterProvider router={router} />
+      </ClerkProvider>
+    </ThemeProvider>
   </StrictMode>
 );
