@@ -42,13 +42,6 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 _La página dispone de un servicio de autenticación llamado Clerk, que permite al usuario registrarse o inicar sesión con Google o GitHub, también crear una cuenta con su correo electronico personal y verificarlo_
 _Se utilizó una base de datos MySql para almacenar los datos de estos usuarios_
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Licencia 📄
 
